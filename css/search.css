@@ -71,6 +71,27 @@
 }
 
 
+/*
+.custom_dropdown_placeholder {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #a3a3a3;
+    line-height: 48px;
+    cursor: pointer;
+}
+*/
+
+.custom_dropdown_placeholder {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #a3a3a3;
+    line-height: 48px;
+    cursor: pointer;
+    top: -6px;
+    position: relative;
+}
 
 .custom_dropdown_list i {
     display: inline-block;
@@ -82,14 +103,35 @@
     -ms-transform: translateY(-1px);
     -o-transform: translateY(-1px);
     transform: translateY(-1px);
+    top: -6px;
+    position: relative;
 }
 
+
+form.header_search_form.clearfix {
+    width: 460px;
+}
+
+
+.custom_list.active {
+    z-index: 99999;
+    visibility: visible;
+    opacity: 4;
+    top: 33px;
+    box-shadow: 0 0 25px rgba(37, 50, 70, 0.15);
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+    width: 28%;
+}
 .custom_list {
     text-align: left;
     position: absolute;
     padding: 0;
     top: 75px;
-    left: -15px;
+    left: 276px;
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 0 25px rgba(63, 78, 100, 0.15);
@@ -100,23 +142,23 @@
     transition: all 0.2s ease;
 }
 
+a, a:hover, a:visited, a:active, a:link {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+
 .custom_list li a {
     display: block;
     color: #a3a3a3;
-    line-height: 35px;
+    line-height: 29px;
     border-bottom: solid 1px #ededed;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
+    padding: 6px;
     transition: all 200ms ease;
-}
-
-.custom_dropdown_placeholder {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 300;
-    color: #a3a3a3;
-    line-height: 48px;
-    cursor: pointer;
 }
